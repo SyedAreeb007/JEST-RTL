@@ -1,0 +1,60 @@
+/* Products.css */
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 220px; /* Fixed width */
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Ensure position works for absolute elements */
+}
+
+.product-image {
+    max-width: 100%;
+    max-height: 200px; /* Adjust as needed */
+    width: auto;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-details {
+    max-height: 90px; /* Three lines of text */
+    overflow: hidden;
+}
+
+.product-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit to three lines */
+    -webkit-box-orient: vertical;
+}
+
+.product-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.add-to-cart-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.products-heading {
+    text-align: center;
+    margin-top: 80px; /* Adjust as needed */
+}

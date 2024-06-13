@@ -1,0 +1,43 @@
+/* Crousels.css */
+
+.carousel-caption {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background to improve text readability */
+    padding: 10px; /* Optional: Add some padding */
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+.carousel-caption h3 {
+    font-size: 1.5rem; /* Default font size for h3 */
+}
+
+.carousel-caption p {
+    font-size: 1rem; /* Default font size for p */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .carousel-caption h3 {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+
+    .carousel-caption p {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h3 {
+        font-size: 1rem; /* Further adjust font size for very small screens */
+    }
+
+    .carousel-caption p {
+        font-size: 0.8rem; /* Further adjust font size for very small screens */
+    }
+}
